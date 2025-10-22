@@ -120,16 +120,16 @@ with t1:
 with t2:
     st.write("")
 
-c1, c2, c3 = st.columns([1.2, 1, 1.2])
+c1, c2= st.columns([1.2, 1])
 with c1:
     level = st.radio("Map Level", ["Village", "Assembly Constituency"], horizontal=True)
 with c2:
     use_dummy = st.checkbox("Use Dummy Constituencies", value=True,
                             help="AC dissolve by dummy_ac when ON; by AC_name when OFF.")
-with c3:
-    if st.button("Reset dummy_ac (session)"):
-        merged[DUMMY_AC_FIELD] = merged.get(AC_FIELD, merged.get(DUMMY_AC_FIELD))
-        st.success("dummy_ac reset to original AC_name for this session.")
+# with c3:
+#     if st.button("Reset dummy_ac (session)"):
+#         merged[DUMMY_AC_FIELD] = merged.get(AC_FIELD, merged.get(DUMMY_AC_FIELD))
+#         st.success("dummy_ac reset to original AC_name for this session.")
 
 # ==========
 # MAP RENDER
