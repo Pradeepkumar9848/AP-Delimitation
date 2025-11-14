@@ -15,7 +15,7 @@ st.set_page_config(layout="wide", page_title="AP Vote Share")
 # ============
 SHP_PATH = "Villages_Guntur.shp"                      # your .shp (keep .dbf/.shx/.prj/.cpg beside it)
 SHP_REGION_FIELD = "id"                                # village id column in shapefile
-SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcpJ7af2Qox1haajC9iKrxDaWmtQ8fBmrICAnDqlMYoFHyi_32ebtSNz_6eKRHZkSb97RQeTscwnkf/pub?output=csv"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTMhHqbRb0WQbmDs-w1qQcKHfbfmLY6MGzvxDTMSuFG5IRIZbGrHLUvsrQho3Lz3VXoCmWENlHPXHu/pub?output=csv"
 
 CSV_KEY = "region_code"                                # key in Google Sheet
 VILLAGE_FIELD = "village_name"
@@ -26,6 +26,7 @@ TOTAL_VOTES_COL = "total_votes"
 PARTY_COUNT_COLS = ["TDP_votes", "YSRCP_votes", "BJP_votes", "Others_votes"]
 PARTY_SHARE_COLS = ["TDP_vote_share", "YSRCP_vote_share", "BJP_vote_share", "Others"]
 DEFAULT_CASTE_COLS = ["SC_pct", "ST_pct", "OBC_pct", "BC_pct", "OC_pct", "Minority_pct"]
+
 
 # =========
 # HELPERS
